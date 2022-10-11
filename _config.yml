@@ -28,9 +28,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-remote-theme
+  # - jekyll-remote-theme
   # - jemoji #Uncomment this to allow emoji in your post
-  remote_theme: chesterhow/tale
+  # remote_theme: chesterhow/tale
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
