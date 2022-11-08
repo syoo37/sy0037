@@ -268,7 +268,7 @@ Front Length(cm)       0
 Across Shoulder(cm)    0
 dtype: int64
 </pre>
-# Question 1: Does the Shirt Attributes Vary from Size to Another?
+# Question 1: 셔츠의 속성은 크기에 따라 분류되는가?
 
 
 
@@ -392,15 +392,15 @@ _fig = sns.pairplot(df, hue = 'Brand Size')
 # Question 1: Answered! 
 
 
-Here is what I found out so far:
+지금까지 알아낸 것:
 
 
 
-1. All the attributes that belongs to a shirt (things like: Front Length - Across Shoulders) can be the same across different sizes. That is obvious in the previous graphs, they are very close in sizes **though the brand sizes remain the same**. 
+1. 셔츠에 속하는 모든 속성(예: Front Length - Across Shoulders)는 다른 크기에 걸쳐 동일할 수 있습니다. 이전 그래프에서 분명히 알 수 있습니다. 브랜드 크기는 동일하지만 크기가 매우 비슷합니다. **. 
 
 
 
-2. There is a significant increase in the shirt's attributes (Front length, for instance) as you go further in the size,  **though it's likely you find a small shirt that has the same chest size as an XL shirt.**
+2. XL 사이즈 셔츠와 가슴 크기가 같은 작은 셔츠가 발견될 가능성이 높지만 셔츠의 속성(예: 앞 길이)은 더 커집니다.**
 
 
 # Question Two: Does the shirt Material affect the shirt's attributes?
