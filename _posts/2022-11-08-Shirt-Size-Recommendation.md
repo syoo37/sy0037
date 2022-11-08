@@ -130,3 +130,5 @@ sns.barplot(data= df[df.Brand_Name == 'Forca'], x = 'Brand Size', y = 'Size', ax
 
 # Final Answer: Yes, They vary from one brand to another.
 [## Thanks for making that far in my notebook, I would love it if you take the time to share your opinion on the notebook and correct me if you found any flaws in my work. Stay Safe.]
+
+
