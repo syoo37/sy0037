@@ -400,10 +400,10 @@ _fig = sns.pairplot(df, hue = 'Brand Size')
 
 
 
-2. XL 사이즈 셔츠와 가슴 크기가 같은 작은 셔츠가 발견될 가능성이 높지만 셔츠의 속성(예: 앞 길이)은 더 커집니다.**
+2. XL 사이즈 셔츠와 가슴 치수가 작은 셔츠가 발견될 가능성이 높지만 셔츠의 속성(예: Front Length)은 더 커집니다.**
 
 
-# Question Two: Does the shirt Material affect the shirt's attributes?
+# Question Two: 셔츠의 재료가 셔츠의 속성에 영향을 미칩니까?
 
 
 
@@ -426,13 +426,13 @@ Shirt_Material = df['Type'].value_counts().plot.pie(autopct='%23f%%', radius = 2
 
 ![image](https://user-images.githubusercontent.com/115538847/200498328-4f841ba8-9d61-44d2-9a6e-0c32e9ba2da6.png)
 
-# Question 2: One Day with larger data I will Answer it!
+# Question 2: 더 큰 데이터를 통해 대답할 수 있을 것이다!
 
 
-To Answer a such a question, it would be hard - if it's not impossible to give an accurate answer- within the data I have. It's not accurate to compare a mean of five shirts to a mean of nearly 750 shirts. Needless to say that those five shirts does not cover all the sizes of the shirt. **So We Won't be able to give an answer to such question.**
+이 질문에 대답하는 것은 내가 가지고 있는 데이터로 답하기 어렵다. 셔츠 다섯 벌의 평균으로 거의 750벌의 평균과 비교하는 것은 정확하지 않다. 다섯 개의 셔츠가 셔츠이 모든 사이즈를 대신하여 답할 수 없다. **그래서 이 질문의 답을 하기 어렵다.**
 
 
-# Qeustion 3: Does Sizes Vary from Brand X to Brand Y?
+# Qeustion 3: X 브랜드부터 Y 브랜드까지 사이즈가 다른가?
 
 
 
@@ -445,8 +445,7 @@ fig
 
 
 
-Alright, We have a pretty balanced range of brands in the dataset. But we need to see which brand offer which sizes before diving deep into it.
-
+데이터에서 꽤 균형잡히 브랜드 범위가 있다. 하지만 어떤 브랜드가 어떤 사이즈를 제공하는지 살펴보아야 한다.
 
 
 ```python
@@ -466,10 +465,8 @@ len(df['Brand Name'].unique())
 <pre>
 164
 </pre>
-After going on through multiple technique of trying to represent 164 brand into a clear visualization, I couldn't. Maybe this isn't impossible but sure it's beyond my skill. So I decided to visit the good old sampling techniques.
-
-So, We will choose 4 random brands and compare them to see what the results look like.
-
+164개 브랜드를 명확하게 시각화 하기 위해서 여러 가지 방법을 사용했지만, 정확하게 할 수는 없었다.더 좋은 샘플링을 찾아 적용해보기로 했다.
+그래서 랜덤으로 4개 브랜드를 선정해 비교해서 결과를 추출해보기로 했다.
 
 
 ```python
@@ -529,15 +526,10 @@ sns.barplot(data= df[df.Brand_Name == 'Forca'], x = 'Brand Size', y = 'Size', ax
 # Question 3: Answered!
 
 
-Earlier, We have seen the attributes change within the same shirt size, meaning that size does not offer much details when it comes to it. We have also seen that the Size S can be anywhere from 36 to 39. Needless to say, when it comes to Brands, The whole size thing becomes a mess. Though they all relatively close but it shows flaws on the sizing techniques. They don't offer as much details and your favorite slim S shirt could be L at a different brand.
+S사이즈가 36에서 39/가지 될 수 있다는 걸 알 수 있었다. 브랜드에 관해 다 다른 사이즈로 될 수 있다는 걸 이걸 통해 알 수 있다. 모두 비교적 가깝긴 하지만 사이즈 측정에 대해 결함이 존재한다. 그렇기에 당신이 생각한 S사이즈가 다른 브랜드에서는 L사이즈 일 수 있다.
 
 
-# Final Answer: Yes, They vary from one brand to another.
-
-
-Thanks for making that far in my notebook, I would love it if you take the time to share your opinion on the notebook and correct me if you found any flaws in my work. 
-
-Stay Safe. 
+# Final Answer: 브랜드마다 사이즈가 다르다.
 
 
 # 참고 링크 : https://www.kaggle.com/code/ahmedhelmey/does-same-shirt-sizes-vary-from-brand-to-another
