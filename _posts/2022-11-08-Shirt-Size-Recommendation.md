@@ -1,8 +1,10 @@
 <h1 align="center"> Does Same Shirt Sizes Vary from Brand to Another? </h1>
 
 <h2> Introduction </h2>
-Since I was a child, I was curious to know does brand offer the same standards when they say this shirt's size is XL?
-Well, guess I am finding out today.¶
+<ul>
+<li>Since I was a child, I was curious to know does brand offer the same standards when they say this shirt's size is XL?</li>
+<li>Well, guess I am finding out today.¶</li>
+</ul>
 
 
 ```python
@@ -16,16 +18,35 @@ import plotly.express as px
 import  numpy as np
 import matplotlib.pyplot as plt
 import warnings
+```
 
+```python
 df = pd.read_csv('../input/shirt-size-recommendation/Shirt Size Recommendation.csv')
 df.info()
-
+```
+"<class 'pandas.core.frame.DataFrame'>\n",
+      "RangeIndex: 836 entries, 0 to 835\n",
+      "Data columns (total 7 columns):\n",
+      " #   Column               Non-Null Count  Dtype \n",
+      "---  ------               --------------  ----- \n",
+      " 0   Brand Name           835 non-null    object\n",
+      " 1   Type                 835 non-null    object\n",
+      " 2   Size                 835 non-null    object\n",
+      " 3   Brand Size           835 non-null    object\n",
+      " 4   Chest(cm)            835 non-null    object\n",
+      " 5   Front Length(cm)     835 non-null    object\n",
+      " 6   Across Shoulder(cm)  830 non-null    object\n",
+      "dtypes: object(7)\n",
+      "memory usage: 45.8+ KB\n"
+```python
 df['Size'] = pd.to_numeric(df['Size'],errors = 'coerce')
 df['Chest(cm)'] = pd.to_numeric(df['Chest(cm)'],errors = 'coerce')
 df['Front Length(cm)'] = pd.to_numeric(df['Front Length(cm)'],errors = 'coerce')
 df['Across Shoulder(cm)'] = pd.to_numeric(df['Across Shoulder(cm)'],errors = 'coerce')
 df.info()
+```
 
+```python
 df.head()
 
 df.describe()
@@ -130,3 +151,5 @@ sns.barplot(data= df[df.Brand_Name == 'Forca'], x = 'Brand Size', y = 'Size', ax
 
 # Final Answer: Yes, They vary from one brand to another.
 [## Thanks for making that far in my notebook, I would love it if you take the time to share your opinion on the notebook and correct me if you found any flaws in my work. Stay Safe.]
+
+```
