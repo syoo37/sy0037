@@ -139,5 +139,3 @@ sns.barplot(data= df[df.Brand_Name == 'Forca'], x = 'Brand Size', y = 'Size', ax
 [## Thanks for making that far in my notebook, I would love it if you take the time to share your opinion on the notebook and correct me if you found any flaws in my work. Stay Safe.]
 
 ```
-
-_posts/does-same-shirt-sizes-vary-from-brand-to-another.ipynb
