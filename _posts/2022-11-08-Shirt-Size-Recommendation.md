@@ -20,21 +20,6 @@ import warnings
 df = pd.read_csv('../input/shirt-size-recommendation/Shirt Size Recommendation.csv')
 df.info()
 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 836 entries, 0 to 835
-Data columns (total 7 columns):
- #   Column               Non-Null Count  Dtype 
----  ------               --------------  ----- 
- 0   Brand Name           835 non-null    object
- 1   Type                 835 non-null    object
- 2   Size                 835 non-null    object
- 3   Brand Size           835 non-null    object
- 4   Chest(cm)            835 non-null    object
- 5   Front Length(cm)     835 non-null    object
- 6   Across Shoulder(cm)  830 non-null    object
-dtypes: object(7)
-memory usage: 45.8+ KB
-
 df['Size'] = pd.to_numeric(df['Size'],errors = 'coerce')
 df['Chest(cm)'] = pd.to_numeric(df['Chest(cm)'],errors = 'coerce')
 df['Front Length(cm)'] = pd.to_numeric(df['Front Length(cm)'],errors = 'coerce')
