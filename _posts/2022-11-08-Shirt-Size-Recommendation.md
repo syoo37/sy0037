@@ -1,3 +1,17 @@
+<h1 align="center"> Does Same Shirt Sizes Vary from Brand to Another? </h1>
+
+<h2> Introduction </h2>
+Since I was a child, I was curious to know does brand offer the same standards when they say this shirt's size is XL?
+Well, guess I am finding out today.¶
+
+
+```python
+# This Python 3 environment comes with many helpful analytics libraries installed
+# It is defined by the kaggle/python docker image: https://github.com/kaggle/docker-python
+# For example, here's several helpful packages to load in 
+
+# Imported Libraries
+
 {
  "cells": [
   {
