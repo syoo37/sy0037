@@ -539,3 +539,5 @@ Thanks for making that far in my notebook, I would love it if you take the time 
 
 Stay Safe. 
 
+
+# 참고 링크 : https://www.kaggle.com/code/ahmedhelmey/does-same-shirt-sizes-vary-from-brand-to-another
