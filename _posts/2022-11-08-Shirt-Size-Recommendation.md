@@ -24,20 +24,21 @@ import warnings
 df = pd.read_csv('../input/shirt-size-recommendation/Shirt Size Recommendation.csv')
 df.info()
 ```
-"<class 'pandas.core.frame.DataFrame'>\n",
-      "RangeIndex: 836 entries, 0 to 835\n",
-      "Data columns (total 7 columns):\n",
-      " #   Column               Non-Null Count  Dtype \n",
-      "---  ------               --------------  ----- \n",
-      " 0   Brand Name           835 non-null    object\n",
-      " 1   Type                 835 non-null    object\n",
-      " 2   Size                 835 non-null    object\n",
-      " 3   Brand Size           835 non-null    object\n",
-      " 4   Chest(cm)            835 non-null    object\n",
-      " 5   Front Length(cm)     835 non-null    object\n",
-      " 6   Across Shoulder(cm)  830 non-null    object\n",
-      "dtypes: object(7)\n",
-      "memory usage: 45.8+ KB\n"
+<ul>
+      <li><class 'pandas.core.frame.DataFrame'></li>
+      <li>RangeIndex: 836 entries, 0 to 835</li>
+      <li>Data columns (total 7 columns):</li>
+      <li> #   Column               Non-Null Count  Dtype </li>
+      <li>---  ------               --------------  ----- </li>
+      <li>0   Brand Name           835 non-null    object</li>
+      <li>1   Type                 835 non-null    object</li>
+      <li>2   Size                 835 non-null    object</li>
+      <li>3   Brand Size           835 non-null    object</li>
+      <li>4   Chest(cm)            835 non-null    object</li>
+      <li>5   Front Length(cm)     835 non-null    object</li>
+      <li>6   Across Shoulder(cm)  830 non-null    object</li>
+      <li>dtypes: object(7)</li>
+      <li>memory usage: 45.8+ KB</li>
 ```python
 df['Size'] = pd.to_numeric(df['Size'],errors = 'coerce')
 df['Chest(cm)'] = pd.to_numeric(df['Chest(cm)'],errors = 'coerce')
