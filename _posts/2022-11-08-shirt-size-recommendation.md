@@ -1,14 +1,13 @@
 # Does Same Shirt Sizes Vary from Brand to Another?
 
-## What is Going on?
+## 브랜드마다 같은 사이즈 셔츠의 크기가 다른가?
+
+#### 예전부터 셔츠의 사이즈가 XL라고 하면 모든 브랜드가 같은 기준으로 제공하는가?
+
+#### 그것에 대해 알아봅시다
 
 
-#### Since I was a child, I was curious to know does brand offer the same standards when they say this shirt's size is XL? 
-
-#### Well, guess I am finding out today.
-
-
-# Getting Familiar with the Dataset
+# 데이터셋 준비
 
 
 
