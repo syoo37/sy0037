@@ -1,15 +1,16 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "SoYoung"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+새로운 경험을 통해 얻어가는 과정들의 깨달음을 기록해가는 과정.
+다른이의 기록을 보고 자신의 것을 만들기 위해 기록하며, 스스로의 성장을 위해 남기는 기록
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+아직은 부족하지만 앞으로 더욱 좋은 결과물을 얻기 위해서 노력해야 한다. 그렇기 위해선 예전의 기록을 보고 부족한 부분을 보완해야 한다. 그렇게 성장하다 보면 원하는 결과물을 얻을 수 있을 것이다.
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+## 실패는 성공의 어머니
+실패를 두려워하지 말 것
+도전해보는 용기를 가질 것
+부족한 부분을 보완해나갈 것
